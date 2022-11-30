@@ -310,7 +310,7 @@ def findTask(event,taskName):
 def addEvent(eventPool,tasks=[],name=None,association={}):
        eventPool.events+=[event(tasks,name,association,eventPool)]
        if name != None:
-              eventPool.indexs[name] = len(eventPool.event)-1
+              eventPool.indexs[name] = len(eventPool.events)-1
 
 def deleteEvent(eventPool,eventName):
        del eventPool.events[eventPool.indexs[eventName]]
